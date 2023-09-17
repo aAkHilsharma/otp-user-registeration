@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Steps</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 id="heading" class="text-center">Registration Steps</h1>
+      <div class="text-center" id="message-column"></div>
+      <!-- Step 1: Phone Input -->
+      <div id="step-1">
+        <h2>Step 1</h2>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="phone"
+            placeholder="Enter your phone number Eg. 91XXXXXXXXXX"
+          />
+        </div>
+        <button class="btn btn-primary" id="step-1-button">Submit</button>
+      </div>
+
+      <div id="step-2" style="display: none">
+        <h2>Step 2</h2>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="otp"
+            placeholder="Enter the OTP sent to your phone"
+          />
+        </div>
+        <button class="btn btn-primary" id="step-2-button">Submit</button>
+      </div>
+
+      <div id="step-3" style="display: none">
+        <h2>Step 3</h2>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="Choose a username"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button class="btn btn-primary" id="step-3-button">Register</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

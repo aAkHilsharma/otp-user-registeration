@@ -1,0 +1,28 @@
+{
+  "name": "otp-registeration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vonage/server-sdk": "^2.11.1",
+    "axios": "^1.5.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fast-two-sms": "^3.0.0",
+    "ipinfo": "^1.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2",
+    "twilio": "^4.17.0"
+  },
+  "devDependencies": {
+    "@types/ip": "^1.1.0"
+  }
+}
