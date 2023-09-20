@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         messageColumn.textContent =
           "Please fill the below fields to register the user";
       } else {
-        messageColumn.textContent = "Invalid OTP. Please try again.";
+        messageColumn.textContent = data.message;
       }
     } catch (error) {
       console.error("Invalid otp please try again");

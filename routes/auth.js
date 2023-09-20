@@ -68,7 +68,8 @@ router.post("/step-2", async (req, res) => {
         message: "OTP verified. You can now proceed with registration",
       });
     } else {
-      return res.status(400).json({ success: false, message: "Invalid OTP" });
+      await Otp.deleteOne({ phone });
+      return res.status(400).json({ success: false, message: "Invalid OTP! Please refresh and try again" });
     }
   } catch (err) {
     console.error("Error verifying OTP in MongoDB:", err);
